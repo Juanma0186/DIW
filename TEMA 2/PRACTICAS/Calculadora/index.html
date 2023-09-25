@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form class="calculadora" name="calc">
+      <input type="text" class="value" name="txt">
+      <span class="num clear" onclick="clearDisplay()">c</span>
+      <span class="num" onclick="display('^')">^</span>
+      <span class="num" onclick="display('/')">/</span>
+      <span class="num" onclick="display('*')">*</span>
+      <span class="num" onclick="display('7')">7</span>
+      <span class="num" onclick="display('8')">8</span>
+      <span class="num" onclick="display('9')">9</span>
+      <span class="num" onclick="display('-')">-</span>
+      <span class="num" onclick="display('4')">4</span>
+      <span class="num" onclick="display('5')">5</span>
+      <span class="num" onclick="display('6')">6</span>
+      <span class="num plus" onclick="display('+')">+</span>
+      <span class="num" onclick="display('1')">1</span>
+      <span class="num" onclick="display('2')">2</span>
+      <span class="num" onclick="display('3')">3</span>
+      <span class="num" onclick="display('√')">√</span>
+      <span class="num" onclick="display('0')">0</span>
+      <span class="num" onclick="onlyOneComma()">.</span>
+      <span class=" num equal" onclick="calculate()"> = </span>
+      <span class="num" onclick="percentage()">%</span>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

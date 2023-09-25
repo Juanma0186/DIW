@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #7159c1, #ab59c1);
+}
+
+.container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.container .calculadora {
+  position: relative;
+  display: grid;
+}
+
+.container .calculadora .value {
+  grid-column: span 4;
+  height: 140px;
+  width: 300px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 30px;
+  background: transparent;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.container .calculadora span {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  transition: 0.5s;
+}
+
+.container .calculadora span:hover {
+  transition: 0s;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.container .calculadora span:active {
+  background: #f5aab6;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.container .calculadora .clear {
+
+  background: #f9897f;
+}
+
+.container .calculadora .clear:hover {
+  transition: 0s;
+  background: #f57d72;
+}
+
+.container .calculadora .clear:active {
+  background: #f36c60;
+}
+
+.container .calculadora .equal {
+  background: #f9897f;
+}
+
+.container .calculadora .equal:hover {
+  transition: 0s;
+  background: #f57d72;
+}
+
+.container .calculadora .equal:active {
+  background: #f36c60;
+}
