@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  color: white;
+  display: grid;
+  column-gap: 1.5em;
+  grid-template-columns: 1fr 300px 200px;
+  grid-template-rows: 75px 75px 1fr 1fr 50px;
+  grid-template-areas: "encabezado encabezado encabezado"
+    "navegacion navegacion navegacion"
+    "principales . ."
+    ". destacadas ."
+    "pie pie pie";
+
+}
+
+.encabezado {
+  grid-area: encabezado;
+  background-color: #5097d5;
+  padding: 20px;
+}
+
+.navegacion {
+  grid-area: navegacion;
+  background-color: #65c87a;
+  padding: 20px;
+}
+
+.principales {
+  grid-area: principales;
+  background-color: #d65745;
+  padding: 10px;
+}
+
+.destacadas {
+  grid-area: destacadas;
+  background-color: #e79f3c;
+  padding: 10px;
+}
+
+.pie {
+  grid-area: pie;
+  background-color: #38485c;
+  padding: 20px;
+}
