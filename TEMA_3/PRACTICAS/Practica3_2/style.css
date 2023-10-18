@@ -64,6 +64,7 @@ body {
   --size: 200px;
   width: var(--size);
   height: var(--size);
+  transition: all 2s ease;
 }
 
 .imagen img {
@@ -73,4 +74,9 @@ body {
   aspect-ratio: 16/9;
   border-radius: 8px;
   box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
+}
+
+.imagen:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
