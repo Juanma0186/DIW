@@ -1,0 +1,3 @@
+La web que he creado es una simple landing page donde encontramos un logo que va cambiando por cada vez que recarga la página(al igual que el resto de fotos de la web, gracais a Lorem Picsum que nos permite hacerlo).
+También incluye unos links (no funcionales) de inicio, about us y contacto.
+En el main encontramos a la izquierda un menu donde podremos seleccionar como queremos que salgan las imágenes si cuadradas(16/9) o redondas (1/1). Al hacer click en una de las opciones cambiará el texto del div de la derecha por el seleccionado y modificará las clases de las fotos para mostrarlas de la manera indicada

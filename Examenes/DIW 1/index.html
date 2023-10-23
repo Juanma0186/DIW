@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Examen DIW</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="https://picsum.photos/60" alt="Logo">
+        <h1>Logo</h1>
+      </a>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">About US</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="menu">
+        <h2>Imágenes</h2>
+        <ul>
+          <li onclick="changeTipo('Cuadradas')">Cuadradas</li>
+          <li onclick="changeTipo('Redondas')">Redondas</li>
+        </ul>
+      </div>
+      <div class="fotos-container">
+        <h2>Imágenes <span id="tipo" class="tipo">Cuadradas</span></h2>
+        <div class="fotos" id="fotos">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; Examen DIW | Juan Manuel Suárez | DAW2</p>
+  </footer>
+
+  <script>
+
+    function changeTipo(tipo) {
+      document.getElementById("tipo").innerHTML = tipo;
+      let fotos = Array.from(document.getElementsByClassName("imagen"));
+
+      if (tipo === 'Redondas') {
+        fotos.forEach(foto => {
+          foto.classList.add("redondas");
+        });
+
+      } else {
+        fotos.forEach(foto => {
+          foto.classList.remove("redondas");
+        });
+
+      }
+
+    }
+
+    function cargarImagenes(nImagenes) {
+      const container = document.getElementById("fotos");
+
+      for (let i = 0; i < nImagenes; i++) {
+        container.innerHTML += `
+    <div class="imagen">
+    <img src="https://picsum.photos/1280/720?random=${i}" alt="Imagen ${i} loading="lazy"></div>`;
+      }
+    }
+
+    window.onload = function () {
+      cargarImagenes(12);
+    };
+
+    function refresh() {
+      location.reload();
+    }
+  </script>
+</body>
+
+</html>
