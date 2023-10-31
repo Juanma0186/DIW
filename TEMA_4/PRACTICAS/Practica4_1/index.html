@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/jm_logo.webp" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -11,23 +12,30 @@
     <title>About me</title>
 </head>
 
-<body>
+<body class="jm-bg-primary">
     <header>
-        <nav class="navbar navbar-expand-lg jm-bg-primary">
+        <nav class="navbar navbar-expand-lg jm-bg-primary jm-nav-shadow px-4">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="#">Juanma0186</a>
+                <a class="navbar-brand text-white d-flex align-items-start justify-content-center  gap-3"
+                    href="./index.html">
+                    <img src="./assets/jm_logo.webp" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    <span>
+                        Juan Manuel
+                    </span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="botonCerrar">
                     <span class="navbar-toggler-icon d-flex  justify-content-center align-items-center text-white"><i
-                            class="bi bi-list"></i></span>
+                            class="bi bi-list" id="cerrarNav"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#aboutme">Sobre mí</a>
+                            <a class="nav-link text-white" href="#aboutme">Acerca de mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#time">Horario</a>
+                            <a class="nav-link text-white" href="#horario">Horario</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#projects">Mis proyectos</a>
@@ -38,9 +46,201 @@
         </nav>
     </header>
 
+    <main class="col-12 px-5 h-100 ">
+
+        <!--Acerca de mi-->
+        <div class="jm-bg-secondary p-2" id="aboutme">
+
+            <!--Titulo-Sobre mí-->
+            <div class="col-12 flex-column align-items-center  justify-content-center mt-4">
+                <h1 class=" text-white text-center  col-auto">Acerca de mí</h1>
+                <div class="h2 bg-indigo w-75 pt-1 col-auto mx-auto"></div>
+            </div>
+
+            <!--Contenido Sobre mí-->
+            <div class="container d-flex gap-2">
+                <div class="row">
+                    <div class="col-lg-6 p-4 d-flex  justify-content-center align-items-center">
+                        <div class="row">
+                            <p class="text-white">
+                                Mi nombre es <span class="fw-bold fst-italic text-decoration-underline">Juan
+                                    Manuel</span>, tengo 22 años y
+                                actualmente soy
+                                estudiante de
+                                Desarrollo de
+                                Aplicaciones Web
+                                en el IES Juan de la Cierva.
+                            </p>
+                            <p class="text-white">
+                                Me considero una persona responsable, con capacidad de adaptación y aprendizaje, con
+                                facilidad para <span class="fw-bold fst-italic text-decoration-underline">trabajar en
+                                    equipo</span> y con ganas de aprender y mejorar.
+                            </p>
+                            <p class="text-white">
+                                Me gusta la informática y todo lo relacionado con la misma, por ello decidí estudiar
+                                este
+                                módulo y me gustaría <span
+                                    class="fw-bold fst-italic text-decoration-underline">dedicarme a
+                                    ello</span> en un futuro.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 p-4 d-flex justify-content-center align-items-center">
+                        <div class="rounded-circle overflow-hidden ratio-1x1 border border-black border-5 ">
+                            <img src="https://via.placeholder.com/450" alt="Logo" class="img-fluid object-fit-cover ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!--Horario-->
+            <div class="jm-bg-secondary p-5" id="horario">
+
+                <!--Titulo-Horario-->
+                <div class="col-12 flex-column align-items-center  justify-content-center mt-4">
+                    <h1 class=" text-white text-center  col-auto">Horario</h1>
+                    <div class="h2 bg-indigo w-75 pt-1 col-auto mx-auto"></div>
+                </div>
+
+                <!--Contenido Horario-->
+                <div class="table-responsive mt-5">
+                    <table class="table table-bordered text-center fw-bold ">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="bg-indigo text-white">Hora</th>
+                                <th scope="col" class="bg-indigo text-white">Lunes</th>
+                                <th scope="col" class="bg-indigo text-white">Martes</th>
+                                <th scope="col" class="bg-indigo text-white">Miércoles</th>
+                                <th scope="col" class="bg-indigo text-white">Jueves</th>
+                                <th scope="col" class="bg-indigo text-white">Viernes</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="align-middle">
+                            <tr>
+                                <th scope="row" class="bg-indigo-light">16:00</th>
+                                <td rowspan="2" class="jm-bg-secondary">DWEC</td>
+                                <td rowspan="2" class="jm-bg-secondary">DWEC</td>
+                                <td rowspan="2" class="jm-bg-secondary">DIW</td>
+                                <td rowspan="2" class="jm-bg-secondary">DWEC</td>
+                                <td rowspan="3" class="jm-bg-secondary">DWES</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="bg-indigo-light">16:55</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="bg-indigo-light">17:50</th>
+                                <td class="jm-bg-secondary">DWES</td>
+                                <td class="jm-bg-secondary">EMPRESA</td>
+                                <td class="jm-bg-secondary">EMPRESA</td>
+                                <td class="jm-bg-secondary">DAW</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="bg-indigo-light">18:45</th>
+                                <th scope="row" colspan="5" class="bg-indigo-light">RECREO</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="bg-indigo-light">19:10</th>
+                                <td rowspan="2" class="jm-bg-secondary">DWES</td>
+                                <td rowspan="3" class="jm-bg-secondary">DWES</td>
+                                <td class="jm-bg-secondary">EMPRESA</td>
+                                <td class="jm-bg-secondary">DAW</td>
+                                <td rowspan="2" class="jm-bg-secondary">DWEC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="bg-indigo-light">20:05</th>
+                                <td rowspan="2" class="jm-bg-secondary">DAW</td>
+                                <td rowspan="2" class="jm-bg-secondary">DIW</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="bg-indigo-light">21:00</th>
+                                <td class="jm-bg-secondary">INGLÉS</td>
+                                <td class="jm-bg-secondary">INGLÉS</td>
+                            </tr>
+
+                            <!-- Agrega más filas para las horas restantes -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <!--Proyectos-->
+
+            <!--Titulo-Proyectos-->
+            <div class="col-12 flex-column align-items-center  justify-content-center mt-4">
+                <h1 class=" text-white text-center  col-auto">Proyectos</h1>
+                <div class="h2 bg-indigo w-75 pt-1 col-auto mx-auto"></div>
+            </div>
+
+            <!--Contenido Proyectos-->
+            <div class="container text-center">
+                <div class="row row-cols-3 column-gap-2">
+
+                    <div class="col bg-indigo-light w-auto ">
+                        dasdsa
+
+                    </div>
+                    <div class="col bg-indigo-light  w-auto ">
+                        dasdsa
+
+                    </div>
+                    <div class="col bg-indigo-light w-auto ">
+                        dasdsa
+
+                    </div>
+                    <div class="col bg-indigo-light  w-auto ">
+                        dasdsa
+
+                    </div>
+                    <div class="col bg-indigo-light">
+                        dasdsa
+
+                    </div>
+                    <div class="col bg-indigo-light">
+                        dasdsa
+
+                    </div>
+                    <div class="col bg-indigo-light">
+                        dasdsa
+
+                    </div>
+                    <div class="col bg-indigo-light">
+                        dasdsa
+
+                    </div>
+                    <div class="col bg-indigo-light">
+                        dasdsa
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script>
+        const cerrar = document.getElementById('cerrarNav');
+        const botonCerrar = document.getElementById('botonCerrar');
+
+        botonCerrar.addEventListener('click', () => {
+            cerrar.classList.toggle('bi-list');
+            cerrar.classList.toggle('bi-x');
+        });
+
+    </script>
 
 </body>
 

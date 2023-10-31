@@ -2,15 +2,36 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 .jm-bg-primary {
-    background-color: #223;
+    background-color: #222;
 }
 
-/* Cambiar el color del outline cuando el toggler está activo */
-.navbar-toggler {
-    border: none;
-    outline: none !important;
-    /* Cambia "#ff0000" al color deseado */
+.jm-bg-secondary {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+.bg-indigo {
+    background-color: #6610f2 !important;
+    color: white !important;
+}
+
+.bg-indigo-light {
+    background-color: #7e3af2 !important;
+    color: white !important;
+}
+
+.text-indigo {
+    color: #6610f2;
+}
+
+.jm-nav-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
