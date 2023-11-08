@@ -9,6 +9,10 @@ p {
     font-size: 1.2rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .jm-bg-primary {
     background-color: #222;
 }
