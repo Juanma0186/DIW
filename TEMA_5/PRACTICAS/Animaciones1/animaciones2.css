@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+hr {
+    border: 2px solid lightcoral;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border: 4px solid indigo;
+    border-radius: 8px;
+    background-color: blueviolet;
+}
+
+.uno {
+    width: 100px;
+    transition: width 1s linear;
+}
+
+.uno:hover {
+    width: 100%;
+}
+
+.dos {
+    width: 100px;
+    height: 100px;
+    /*hacemos que el width aumente más rapido que el heigth*/
+    transition: width 1s linear, height 2s linear;
+}
+
+.dos:hover {
+    height: 100%;
+    width: 100%;
+}
+
+.tres {
+    height: 100px;
+    width: 100px;
+    transition: width 1s ease-in, height 2s ease-out;
+}
+
+.tres:hover {
+    height: 100%;
+    width: 100%;
+}
+
+.cuatro {
+    width: 100px;
+    height: 100px;
+    transition: width 1s ease-in, height 2s ease-in;
+    transition-delay: 2s;
+}
+
+.cuatro:hover {
+    height: 100%;
+    width: 100%;
+}
+
+.cinco {
+    width: 100px;
+    height: 100px;
+    transition: all 1s ease-in;
+}
+
+.cinco:hover {
+    width: 100%;
+    height: 100%;
+    transform: rotate(150deg);
+}
+
+.escena {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes movePerson {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(75px);
+        /* Mueve la persona hacia el borde de la torre */
+    }
+}
+
+@keyframes dropBall {
+    0% {
+        transform: translateY(0);
+    }
+
+    50%,
+    100% {
+        transform: translateY(275px);
+    }
+
+    75% {
+        transform: translateY(175px);
+
+    }
+}
+
+.personConPelota {
+    display: flex;
+    animation: movePerson 1s ease forwards;
+}
+
+.person {
+    height: 50px;
+}
+
+.person img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.pelota {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    transform: translate(-10px, 30px);
+    animation: dropBall 1s ease-in forwards;
+    animation-delay: 1.5s;
+}
+
+.tower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+    height: 250px;
+    width: 150px;
+    border: 4px solid indigo;
+    border-radius: 8px;
+    background-color: blueviolet;
+}
