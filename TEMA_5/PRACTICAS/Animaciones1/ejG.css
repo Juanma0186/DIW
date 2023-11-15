@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+.container {
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 50%);
+    width: 400px;
+    height: 400px;
+    perspective: 500px;
+}
+
+.container div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container:hover {
+    transform: translateZ(300px);
+}
+
+.caja1 {
+    background: linear-gradient(180deg, black, red);
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.caja2 {
+    background: linear-gradient(-90deg, black, blue);
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.caja3 {
+    background: linear-gradient(0deg, black, orange);
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+.caja4 {
+    background: linear-gradient(90deg, black, green);
+    transform: rotateY(-90deg) translateZ(200px);
+}
