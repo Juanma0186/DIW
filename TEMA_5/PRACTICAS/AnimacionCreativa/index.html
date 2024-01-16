@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reloj de Arena</title>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #sand-container {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #sand {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fall 2s linear infinite;
+  }
+
+  #rotate-btn {
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+      transform: translateX(-50%) translateY(100%);
+    }
+  }
+</style>
+</head>
+
+<body>
+
+  <div id="sand-container">
+    <div id="sand"></div>
+  </div>
+
+  <button id="rotate-btn" onclick="rotateSand()">Girar</button>
+
+  <script>
+    function rotateSand() {
+      const sand = document.getElementById('sand');
+      sand.style.animation = 'none';
+      void sand.offsetWidth; // Trigger reflow
+      sand.style.animation = null;
+    }
+  </script>
+
+</body>
+
+</html>
