@@ -1,0 +1,59 @@
+/*!Texto*/
+
+/*Se utilizan span ya que se necesitan elementos que sean inline para el gradiente*/
+.scroll-mostrar h2 span {
+  background-image: linear-gradient(90deg, #9ab206, #09bcd3);
+}
+
+.scroll-mostrar p span {
+  background-image: linear-gradient(90deg, #09bcd3, #9ab206);
+}
+
+.scroll-mostrar span {
+  color: rgba(255, 255, 255, 0.2);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  animation: scroll-mostrar linear forwards;
+  animation-timeline: scroll(root);
+}
+
+.scroll-mostrar h2 span {
+  /*desde que entra al viewport*/
+  animation-range-start: cover 15vh;
+  animation-range-end: cover 65vh;
+}
+
+.scroll-mostrar p span {
+  animation-range-start: cover 70vh;
+  animation-range-end: cover 130vh;
+}
+
+@keyframes scroll-mostrar {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+/*!Galería de Imágenes*/
+@keyframes mostrar-img {
+  from {
+    opacity: 0;
+    translate: 0 100px;
+    scale: 0.8;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+
+}
+
+#galeria img,
+#muestra>div {
+  animation: mostrar-img linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}

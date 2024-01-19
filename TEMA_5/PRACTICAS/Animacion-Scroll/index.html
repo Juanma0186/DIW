@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animaciones.css">
+  <title>Animación</title>
+</head>
+
+<body>
+  <section id="hero">
+    <img src="img/hero.webp" alt="Imagen Naturaleza Portada">
+    <div id="titulo">
+      <h1>Nuestra Naturaleza <br>en Imágenes</h1>
+    </div>
+    <svg id="montanas" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#000" fill-opacity="1"
+        d="M0,128L8,117.3C16,107,32,85,48,85.3C64,85,80,107,96,117.3C112,128,128,128,144,128C160,128,176,128,192,149.3C208,171,224,213,240,208C256,203,272,149,288,133.3C304,117,320,139,336,138.7C352,139,368,117,384,133.3C400,149,416,203,432,213.3C448,224,464,192,480,192C496,192,512,224,528,240C544,256,560,256,576,229.3C592,203,608,149,624,112C640,75,656,53,672,64C688,75,704,117,720,165.3C736,213,752,267,768,282.7C784,299,800,277,816,272C832,267,848,277,864,282.7C880,288,896,288,912,266.7C928,245,944,203,960,197.3C976,192,992,224,1008,208C1024,192,1040,128,1056,112C1072,96,1088,128,1104,154.7C1120,181,1136,203,1152,202.7C1168,203,1184,181,1200,181.3C1216,181,1232,203,1248,186.7C1264,171,1280,117,1296,106.7C1312,96,1328,128,1344,122.7C1360,117,1376,75,1392,74.7C1408,75,1424,117,1432,138.7L1440,160L1440,320L1432,320C1424,320,1408,320,1392,320C1376,320,1360,320,1344,320C1328,320,1312,320,1296,320C1280,320,1264,320,1248,320C1232,320,1216,320,1200,320C1184,320,1168,320,1152,320C1136,320,1120,320,1104,320C1088,320,1072,320,1056,320C1040,320,1024,320,1008,320C992,320,976,320,960,320C944,320,928,320,912,320C896,320,880,320,864,320C848,320,832,320,816,320C800,320,784,320,768,320C752,320,736,320,720,320C704,320,688,320,672,320C656,320,640,320,624,320C608,320,592,320,576,320C560,320,544,320,528,320C512,320,496,320,480,320C464,320,448,320,432,320C416,320,400,320,384,320C368,320,352,320,336,320C320,320,304,320,288,320C272,320,256,320,240,320C224,320,208,320,192,320C176,320,160,320,144,320C128,320,112,320,96,320C80,320,64,320,48,320C32,320,16,320,8,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <section id="descubre" class="scroll-mostrar">
+    <h2>
+      <span>Descubre la Naturaleza</span>
+    </h2>
+    <p>
+      <span>
+        Esta web utiliza animaciones en desplazamiento para dar una sensación de profundidad y movimiento. Por lo tanto,
+        este párrafo que estás leyendo se irá rellenando a medida que vayas bajando por la página como estarás
+        comprobando. También las imágenes se irán mostrando una vez que estas entren en el viewport.
+      </span>
+    </p>
+    <div id="muestra">
+      <div><img src="img/acantilado.webp" alt="Imagen de un acantilado"></div>
+      <div><img src="img/playa.webp" alt="Imagen de una playa al atardecer"></div>
+      <div><img src="img/montañas_verdes.webp" alt="Imagen de montañas"></div>
+    </div>
+  </section>
+
+  <section id="galeria" class="scroll-mostrar">
+    <h2>Nuestra Galería</h2>
+    <p>
+      En esta sección se muestra una galería de imágenes con un efecto de aparición al hacer scroll. Las imágenes que
+      aparecerán pueden <b>no</b> estar relacionadas con el tema principal debido a que son imágenes aleatorias
+      obtenidas de <a href="https://picsum.photos/">Lorem Picsum</a>.
+    </p>
+    <div class="columnas">
+      <div class="columna">
+        <img src="https://picsum.photos/800/600?random=1">
+        <img src="https://picsum.photos/800?random=2">
+        <img src="https://picsum.photos/800/1100?random=3">
+      </div>
+      <div class="columna">
+        <img src="https://picsum.photos/800/400?random=4" loading="lazy">
+        <img src="https://picsum.photos/800/600?random=5" loading="lazy">
+        <img src="https://picsum.photos/800/1300?random=6" loading="lazy">
+      </div>
+      <div class="columna">
+        <img src="https://picsum.photos/800/450?random=7" loading="lazy">
+        <img src="https://picsum.photos/800/750?random=8" loading="lazy">
+        <img src="https://picsum.photos/800/1000?random=9" loading="lazy">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2024 - Práctica DIW (Animaciones)</p>
+  </footer>
+</body>
+
+</html>
