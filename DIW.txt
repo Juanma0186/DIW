@@ -1,0 +1,31 @@
+- ¿Característica incorrecta de SQUARE 25000?
+Accesibilidad ✓
+Fiabilidad
+Seguridad
+Mantenibilidad
+
+W3C -> WAI-> WCAG -> actual 2.1 (2018)
+
+Principios-> Perceptible, Operable, Comprensible y Robusto
+
+-¿Cuál es incorrecto?
+Perceptible
+Operable
+Compatible ✓
+Robusto
+
+-¿Cuál deberá ser el contraste?
+4.5:1 ✓
+5.4:1
+4.5:2
+Ninguna
+
+USABILIDAD: ISO-9241
+
+QoS SW: SQUARE25000, 1n->ACEFUSPM
+
+ACCESIBILIDAD: WCAG 2.1, W3C->WAI->WCAG 2.0(2008), 2.1(2018)
+WCAG: Principios->Directrices
+	4 principios->POCR (Perceptible, Operable, Comprensible y Robusto)
+	Niveles de conformidad: A(25 criterios), AA(13 crt), AAA(23crt)
+	

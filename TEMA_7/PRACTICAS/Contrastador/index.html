@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrastador</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    #contraste,
+    #nocontraste {
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    .contraste-bueno {
+      color: #ffffff;
+      background-color: rgb(52, 152, 219);
+    }
+
+    .contraste-malo {
+      color: #ffffff;
+      background-color: rgb(127, 140, 141);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="contraste" class="contraste-bueno">
+    <p>Este es un texto con contraste OK.</p>
+  </div>
+  <div id="nocontraste" class="contraste-malo">
+    <p>Este es un texto con contraste NOK.</p>
+  </div>
+  <script src="contrastador.js"></script>
+
+</html>
+</body>
+
+</html>
